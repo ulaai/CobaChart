@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.uli2.CobaChart.Main2Activity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/fr1"
+        android:orderInCategory="100"
+        android:title="First Tab"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/fr2"
+        android:orderInCategory="100"
+        android:title="Second Tab"
+        app:showAsAction="always"/>
+
+
+    <item
+        android:id="@+id/fr3"
+        android:orderInCategory="100"
+        android:title="Third Tab"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/go"
+        android:orderInCategory="100"
+        android:title="GOH"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/close"
+        android:orderInCategory="100"
+        android:title="Close"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="65dp"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.uli2.cobachart.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:id="@+id/linearLayout2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="195dp"/>
+
+        <TextView
+            style="@style/textView_style"
+            android:id="@+id/textview"
+            android:text="UserProfileManagement"/>
+        <EditText
+            style="@style/editText_style"
+        android:id="@+id/textUname"
+        android:inputType="textPersonName"
+        android:hint="Username"/>
+
+    <EditText
+        style="@style/editText_style"
+        android:id="@+id/textPass"
+        android:inputType="textPersonName"
+        android:hint="Password"/>
+
+    <Button
+            style="@style/button_style"
+            android:id="@+id/button"
+            android:text="Log In"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

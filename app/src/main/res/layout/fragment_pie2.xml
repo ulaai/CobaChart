@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="layout.Pie2Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Web Response"
+            android:textSize="24sp"/>
+
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="395dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie2chart"
+            android:name="layout.Pie2Fragment"
+            android:layout_width="match_parent"
+            android:layout_height="378dp"
+            android:layout_below="@+id/space"
+            tools:layout="@layout/fragment_pie"
+
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pie2chart">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dp"
+                    android:text="Open"/>
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Ctrl-O"/>
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Save..."/>
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Ctrl-S"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Save As..."/>
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Ctrl-Shift-S"/>
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"/>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="X"/>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Import..."/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="X"/>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="Export..."/>
+
+                <TextView
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="Ctrl-E"/>
+            </TableRow>
+
+            <View
+                android:layout_height="2dip"
+                android:background="#FF909090"/>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Quit"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
