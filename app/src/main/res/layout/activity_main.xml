@@ -53,6 +53,15 @@
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="81dp"/>
 
+            <Button
+                android:id="@+id/fragment4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.02"
+                android:text="Check Login"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="81dp"/>
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">

@@ -55,7 +55,7 @@ import layout.LineFragment;
 import layout.PieFragment;
 
 public class MainActivity extends AppCompatActivity {
-    private Button fragment1, fragment2, fragment3;
+    private Button fragment1, fragment2, fragment3, fragment4;
     private Button showNotifButton, stopNotifButton, alertButton;
     NotificationManager notificationManager;
     boolean isNotifActive = false;
@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         fragment1 = (Button) findViewById(R.id.fragment1);
         fragment2 = (Button) findViewById(R.id.fragment2);
         fragment3 = (Button) findViewById(R.id.fragment3);
+        fragment4 = (Button) findViewById(R.id.fragment4);
 
         fragment1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,6 +125,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        fragment4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
 
             }
