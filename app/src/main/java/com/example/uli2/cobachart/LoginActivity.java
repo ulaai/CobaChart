@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     Connection con;
     String ip = "172.20.8.29"; //ptmpgesqlsvrdev.pertamina.com
     String classs = "net.sourceforge.jtds.jdbc.Driver";
-    String db = "UserProfileManagement";
+    String db = "jdbc:jtds:sqlserver://ptmpgesqlsvrdev.pertamina.com:1433/UserProfileManagement";
     String uname = "sa";
     String pass = "sqlserver2012PGE";
 
@@ -64,7 +64,8 @@ public class LoginActivity extends AppCompatActivity {
             }
             else {
                 try {
-                    con = ConnectionClass(username, password, db, ip);
+                    Class.forName("net.sourceforge.jtds.jdbc.Driver");
+                    con = DriverManager.getConnection(db, uname, pass);
                     if(con == null) {
                         z = "Cannot connect. Check your internet access!";
                     }
@@ -114,8 +115,8 @@ public class LoginActivity extends AppCompatActivity {
         String ConnURL = null;
 
         try {
-            Class.forName(classs).newInstance();
-            ConnURL = "jdbc:jtds:sqlserver://" + ipserver + ";" + "databaseName=" + database +
+            Class.forName("net.sourceforge.jtds.jdbc.Driver");
+            ConnURL = "jdbc:jtds:sqlserver://" + ipserver + database +
                     ";user=" +
                     user + ";password=" + password + ";";
             conn = DriverManager.getConnection(ConnURL);
@@ -124,6 +125,5 @@ public class LoginActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         return conn;
-//
     }
 }
